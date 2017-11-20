@@ -1,4 +1,42 @@
-# Frontend
+# KindGeeks - Frontend
+
+# Docker
+
+## Build
+
+```
+docker build -t kindgeeks/frontend .
+```
+
+## Dev
+
+Runs a dev server on url: http://localhost:4200
+
+```
+docker run -it --rm -p 4200:4200 -v `pwd`/:/data kindgeeks/frontend
+```
+
+## Prod
+
+Creates an ng package in the /dist folder
+
+```
+docker run --rm -v `pwd`/:/data kindgeeks/frontend ng build --prod
+```
+
+## Run
+
+```
+docker-compose up
+```
+
+## Debug
+
+```
+docker run -it --rm -p 4200:4200 -v `pwd`/:/data --entrypoint /bin/sh kindgeeks/frontend
+```
+
+# Angular 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
 
