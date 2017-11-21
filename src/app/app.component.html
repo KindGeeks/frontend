@@ -1,0 +1,32 @@
+<body>
+  <!-- TITLE -->
+  <div class="row flex-center">
+    <div class="text-center">
+      <h1>{{title}}</h1>
+      <h3>our slogan goes here</h3>
+    </div>
+  </div>
+  <!-- TITLE -->
+  <!-- CARDS -->
+  <div class="row flex-center">
+    <div class="card" style="width: 20rem;" *ngFor="let project of projects">
+      <img src="https://picsum.photos/768/768/?random" alt="Card example image">
+
+      <div class="card-body">
+        <h4 class="card-title">{{project.name}}</h4>
+        <h5 class="card-subtitle">{{project.subtitle}}</h5>
+        <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row
+          where the card is.</p>
+        <button>View!</button>
+      </div>
+    </div>
+  </div>
+  <!-- /CARDS -->
+  <!-- FOOTER -->
+  <div class="row flex-center">
+    <p>Made with 💛 by
+      <a href="https://kindgeeks.org" target="_blank">KindGeeks</a>
+      <a href="https://github.com/KindGeeks/frontend">Follow us on GitHub</a>!</p>
+  </div>
+  <!-- /FOOTER -->
+</body>
